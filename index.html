@@ -455,7 +455,7 @@ p {
 ](else-if: $successTrial1 is false and $successTrial2 is false and $successTrial3 is true and $successTrial4 is true and $importantItem is false)[
     [[엔딩-&gt;새드 엔딩 1]]
 ](else-if: $successTrial1 is true and $successTrial2 is false and $successTrial3 is false and $successTrial4 is true and $importantItem is true)[
-    [[엔딩-&gt;새드 엔딩 1]]
+    [[엔딩-&gt;새드 엔딩 2]]
 ](else-if: $successTrial1 is true and $successTrial2 is true and $successTrial3 is false and $successTrial4 is true)[
     [[엔딩-&gt;새드 엔딩 2]]
 ](else-if: $successTrial1 is false and $successTrial2 is true and $successTrial3 is false and $successTrial4 is true)[
@@ -646,11 +646,6 @@ end</tw-passagedata><tw-passagedata pid="27" name="새드 엔딩 2" tags="" posi
 ]
 (if:$seed1 is false and $seed2 is false and $importantItem is true)
 [
-하지만 당신의 손 안에는 싹을 틔울 수 있는 어떠한 씨앗도 없습니다.
-
-여기까지 와서 씨앗이 없다니요.
-
-큰 절망감에 빠집니다.
 
 그때 주머니 속 보석에서 미세한 움직임이 느껴집니다.
 
@@ -662,8 +657,6 @@ end</tw-passagedata><tw-passagedata pid="27" name="새드 엔딩 2" tags="" posi
 
 이제 마을에 돌아갈 수 있을 겁니다!
 
-
-[[다음-&gt;엔딩다이스]] 
 ]</tw-passagedata><tw-passagedata pid="40" name="그림자다이스1" tags="" position="775,1950" size="100,100">(set: $successProbability to 0)
 (set: $failureProbability to 0)
 (if: $selectedButterfly is &quot;황금 나비&quot;)[
@@ -804,7 +797,7 @@ end</tw-passagedata><tw-passagedata pid="48" name="꽃" tags="" position="0,2600
 여정을 마친 당신의 손에는 이 꽃이 들려 있었습니다.
 (잠시 기다리면 꽃이 보입니다)
 
-&lt;iframe src=&quot;https://editor.p5js.org/223jiwon/full/14TZds7yL&quot; width=&quot;300&quot; height=&quot;500&quot; style=&quot;border:none;&quot;&gt;&lt;/iframe&gt;</tw-passagedata><tw-passagedata pid="49" name="제목 없는 구절" tags="" position="100,2600" size="100,100"></tw-passagedata></tw-storydata>
+&lt;iframe src=&quot;https://editor.p5js.org/223jiwon/full/14TZds7yL&quot; width=&quot;500&quot; height=&quot;800&quot; style=&quot;border:none;&quot;&gt;&lt;/iframe&gt;</tw-passagedata><tw-passagedata pid="49" name="제목 없는 구절" tags="" position="100,2600" size="100,100"></tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
