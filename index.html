@@ -36,7 +36,7 @@ p {
     font-family: 'Roboto', sans-serif; /* 선택한 글꼴로 설정 */
     font-weight: 400; /* Regular */
 }
-</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Untitled Passage" tags="" position="525,375" size="100,100">&lt;div style=&quot;clear: both;&quot;&gt;
+</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Untitled Passage" tags="" position="500,375" size="100,100">&lt;div style=&quot;clear: both;&quot;&gt;
    
    
    
@@ -48,20 +48,20 @@ p {
 
     [[시작]]
 &lt;/div&gt;
-</tw-passagedata><tw-passagedata pid="2" name="시작" tags="" position="450,500" size="100,100">
+</tw-passagedata><tw-passagedata pid="2" name="시작" tags="" position="425,500" size="100,100">
 
 
-당신은 푸른 하늘 아래, 한적한 마을에 살고 있습니다.
+당신은 한적한 마을에 살고 있습니다.
 마을은 평화롭고 조용하게 번성하고 있었습니다.
 
 
 그러나 이곳은 최근 큰 어려움을 겪고 있습니다.
-풀들이 자라나지 않아 먹을 것이 부족하며, 더이상 새 생명도 태어나지 않습니다.
+풀들이 자라나지 않으며, 더이상 새 생명도 태어나지 않습니다.
 이 상황에 마을 사람들은 점점 웃음을 잃어 갑니다.
 
 
-[[다음-&gt;시작2]]
-</tw-passagedata><tw-passagedata pid="3" name="첫 번째 시련: 감정의 바람" tags="" position="450,1000" size="100,100">
+[[다음-&gt;시작3]]
+</tw-passagedata><tw-passagedata pid="3" name="첫 번째 시련: 감정의 바람" tags="" position="425,875" size="100,100">
 
 
 당신은 감정의 숲을 여행하며 첫 번째 시련인 감정의 바람에 직면합니다.
@@ -78,10 +78,8 @@ p {
 [[바람을 피해 이동한다]]
 
 
-[[바람에 맞서 지나간다]]</tw-passagedata><tw-passagedata pid="4" name="나비선택" tags="" position="450,875" size="100,100">(set: $butterflies to (a: &quot;황금 나비&quot;, &quot;붉은 나비&quot;, &quot;녹색 나비&quot;, &quot;파랑 나비&quot;))
-(set: $randomIndex to (random: 1, $butterflies&#39;s length))
-(set: $selectedButterfly to $butterflies&#39;s $randomIndex)
-(set: $butterflyMessages to (datamap: 
+[[바람에 맞서 지나간다]]</tw-passagedata><tw-passagedata pid="4" name="나비선택" tags="" position="425,750" size="100,100">(set: $butterflies to (a: &quot;황금 나비&quot;, &quot;붉은 나비&quot;, &quot;녹색 나비&quot;, &quot;파랑 나비&quot;))
+(set: $randomIndex to (random: 1, $butterflies&#39;s length))(set: $selectedButterfly to $butterflies&#39;s $randomIndex)(set: $butterflyMessages to (datamap: 
   &quot;황금 나비&quot;, &quot;당신은 황금 나비가 빛을 내며 당신을 부드럽게 휘감는 것을 느낍니다. 이 나비의 빛나는 날개는 희망과 빛을 상징합니다. 
   
   &lt;img src=&#39;images/Gold_Butterfly.png&#39; alt=&#39;Gold Butterfly&#39;style=&#39;width: 300px; height: auto;&#39;&gt;&quot;, 
@@ -93,18 +91,13 @@ p {
   &lt;img src=&#39;images/Green_Butterfly.png&#39; alt=&#39;Green Butterfly&#39;style=&#39;width: 300px; height: auto;&#39;&gt;&quot;, 
   &quot;파랑 나비&quot;, &quot;당신은 파랑 나비가 우아하게 날개짓을 하며 당신에게 다가오는 것을 보고 통찰력이 깊어지는 것을 느낍니다. 이 나비는 지혜와 통찰력을 상징합니다. 
   
-  &lt;img src=&#39;images/Blue_Butterfly.png&#39; alt=&#39;Blue Butterfly&#39;style=&#39;width: 300px; height: auto;&#39;&gt;&quot;))
-
-(set: $selectedButterflyMessage to $butterflyMessages&#39;s $selectedButterfly)
+  &lt;img src=&#39;images/Blue_Butterfly.png&#39; alt=&#39;Blue Butterfly&#39;style=&#39;width: 300px; height: auto;&#39;&gt;&quot;))(set: $selectedButterflyMessage to $butterflyMessages&#39;s $selectedButterfly)
 (print: $selectedButterflyMessage)
-&lt;br clear=&quot;left&quot;&gt; &lt;!-- 이미지의 왼쪽 정렬을 해제합니다 --&gt;
-
-(set: $nextButterfly to $selectedButterfly)
-
+&lt;br clear=&quot;left&quot;&gt; &lt;!-- 이미지의 왼쪽 정렬을 해제합니다 --&gt;(set: $nextButterfly to $selectedButterfly)
 당신은 희망의 나비와 함께 여정의 첫 발을 내딛습니다.
 
 
-[[다음-&gt;첫 번째 시련: 감정의 바람]]</tw-passagedata><tw-passagedata pid="5" name="바람을 피해 이동한다" tags="" position="325,1125" size="100,100">
+[[다음-&gt;첫 번째 시련: 감정의 바람]]</tw-passagedata><tw-passagedata pid="5" name="바람을 피해 이동한다" tags="" position="325,1000" size="100,100">
 
 
 당신은 바람을 피해 빠르게 움직였습니다.
@@ -120,7 +113,7 @@ p {
 그러나 바람은 예상보다 길고 거세게 이어졌고, 당신과 나비는 곧 떨어질 위기에 쳐했습니다.
 
 
-[[다음-&gt;바람다이스]]</tw-passagedata><tw-passagedata pid="6" name="바람에 맞서 지나간다" tags="" position="525,1125" size="100,100">
+[[다음-&gt;바람다이스]]</tw-passagedata><tw-passagedata pid="6" name="바람에 맞서 지나간다" tags="" position="525,1000" size="100,100">
 
 
 당신은 바람에 당당히 맞서 지나가기로 결정합니다.
@@ -131,24 +124,9 @@ p {
 당신과 나비는 곧 떨어질 위기에 쳐했습니다.
 
 
-[[다음-&gt;바람다이스2]]</tw-passagedata><tw-passagedata pid="7" name="시작2" tags="" position="450,625" size="100,100">
+[[다음-&gt;바람다이스2]]</tw-passagedata><tw-passagedata pid="7" name="시작3" tags="" position="425,625" size="100,100">
 
-
-여기서 우리의 이야기가 시작됩니다.
 당신은 마을을 구할 수호자로 선택되었습니다.
-마을을 위험에 처하게 한 문제를 파해치고,
-깊고 신비로운 감정의 숲을 지나 슬픔의 강을 넘어 희망의 꽃을 가져 와야 합니다. 
-
-
-하지만 이 길은 쉬운 것이 아닙니다.
-
-
-당신은 여러 시련과 어려움에 직면할 것입니다.
-그러나 희망과 용기를 가진다면 마을을 다시 밝은 빛으로 물들일 수 있을 거라 확신합니다.
-
-
-[[다음-&gt;시작3]]</tw-passagedata><tw-passagedata pid="8" name="시작3" tags="" position="450,750" size="100,100">
-
 
 여러 시련을 헤쳐나가고, 마을에 다시 희망의 빛을 되찾아보세요.
 당신의 선택이 마을의 운명을 결정할 것입니다.
@@ -162,7 +140,7 @@ p {
 &lt;img src=&quot;images/cut_1.png&quot;style=&quot;width: 300px; height: auto;&quot;&gt;
 
 
-[[다음-&gt;나비선택]]</tw-passagedata><tw-passagedata pid="9" name="첫 번째 시련 성공" tags="" position="200,1250" size="100,100">
+[[다음-&gt;나비선택]]</tw-passagedata><tw-passagedata pid="8" name="첫 번째 시련 성공" tags="" position="200,1125" size="100,100">
 (set: $successTrial1 to true)
 (if: $nextButterfly is &quot;황금 나비&quot;)[
     (set: $moveMessage to &quot;그때 나비의 황금색 날개가 빛을 발했습니다. 곧이어 당신과 나비는 희망을 잃지 않고 앞으로 나아갑니다.&quot;)
@@ -180,7 +158,7 @@ p {
 나비와 당신은 바람을 피하여 숲의 깊은 곳으로 무사히 나아갔습니다.
 
 
-[[다음-&gt;두 번째 시련]]</tw-passagedata><tw-passagedata pid="10" name="첫 번째 시련 실패" tags="" position="425,1250" size="100,100">
+[[다음-&gt;두 번째 시련]]</tw-passagedata><tw-passagedata pid="9" name="첫 번째 시련 실패" tags="" position="425,1125" size="100,100">
 (set:$importantItem to false)
 (set:$successTrial1 to false)
 거세게 불어온 돌풍에 휘말린 나비와 당신은 몸을 가누지 못합니다.
@@ -194,10 +172,10 @@ p {
 당신과 나비는 힘들게 깊은 숲을 향해 나아갔습니다.
 
 
-[[다음-&gt;두 번째 시련]]</tw-passagedata><tw-passagedata pid="11" name="두 번째 시련" tags="" position="450,1475" size="100,100">(set: $successTrial2 to false)
+[[다음-&gt;두 번째 시련]]</tw-passagedata><tw-passagedata pid="10" name="두 번째 시련" tags="" position="425,1250" size="100,100">(set: $successTrial2 to false)
 
-거센 바람을 지나 감정의 숲에 다다랐습니다.
-당신은 이곳에서 희망의 씨앗을 모아야 합니다.
+당신은 거센 바람을 지나 감정의 숲에 다다랐습니다.
+이곳에서 희망의 씨앗을 모아야 합니다.
 
 
 자세히 보니 발 밑에 씨앗들이 흩뿌려져 있습니다.
@@ -207,7 +185,7 @@ p {
 [[작은 씨앗을 여러 개 모은다]]
 
 
-[[큰 씨앗 하나를 집중적으로 찾는다]]</tw-passagedata><tw-passagedata pid="12" name="두 번째 시련 실패" tags="" position="350,1725" size="100,100">
+[[큰 씨앗 하나를 집중적으로 찾는다]]</tw-passagedata><tw-passagedata pid="11" name="두 번째 시련 실패" tags="" position="325,1500" size="100,100">
 (set: $successTrial2 to false)
 
 당신은 요정의 등장에 깜짝 놀라 모았던 씨앗을 일부 놓쳤습니다.
@@ -218,7 +196,7 @@ p {
 
 (set: $seed1 to false)
 (set: $seed2 to false)
-[[다음-&gt;세 번째 시련]]</tw-passagedata><tw-passagedata pid="13" name="두 번째 시련 성공" tags="" position="200,1725" size="100,100">
+[[다음-&gt;세 번째 시련]]</tw-passagedata><tw-passagedata pid="12" name="두 번째 시련 성공" tags="" position="200,1500" size="100,100">
 (set: $successTrial2 to true)
 
 요정은 당신과 나비를 보더니 가볍게 인사합니다.
@@ -231,7 +209,7 @@ p {
 (set: $seed1 to true)
 (set: $seed2 to false)
 
-[[다음-&gt;세 번째 시련]]</tw-passagedata><tw-passagedata pid="14" name="네 번째 시련" tags="" position="450,1900" size="100,100">
+[[다음-&gt;세 번째 시련]]</tw-passagedata><tw-passagedata pid="13" name="네 번째 시련" tags="" position="625,2000" size="100,100">
 
 
 벌써 해가 지고, 당신은 슬픔의 강에 다다릅니다.
@@ -249,7 +227,7 @@ p {
 그러나 주변에서는 다리도, 지나갈만한 어떠한 방법도 찾지 못합니다.
 
 
-[[다음-&gt;네 번째 시련2]]</tw-passagedata><tw-passagedata pid="15" name="작은 씨앗을 여러 개 모은다" tags="" position="350,1600" size="100,100">
+[[다음-&gt;네 번째 시련2]]</tw-passagedata><tw-passagedata pid="14" name="작은 씨앗을 여러 개 모은다" tags="" position="325,1375" size="100,100">
 
 
 당신은 당장 눈에 보이는 작은 씨앗부터 모으기로 합니다.
@@ -261,7 +239,7 @@ p {
 아무래도 바닥에 있는 씨앗은 요정의 것이었나 봅니다.
 
 
-[[다음-&gt;작은씨앗다이스]]</tw-passagedata><tw-passagedata pid="16" name="큰 씨앗 하나를 집중적으로 찾는다" tags="" position="550,1600" size="100,100">
+[[다음-&gt;작은씨앗다이스]]</tw-passagedata><tw-passagedata pid="15" name="큰 씨앗 하나를 집중적으로 찾는다" tags="" position="525,1375" size="100,100">
 
 
 당신은 가장 큰 씨앗 하나를 찾아 가져가기로 합니다.
@@ -271,7 +249,7 @@ p {
 당신은 두리번거리며 큰 씨앗을 찾아 헤맵니다.
 
 
-[[다음-&gt;큰씨앗다이스]]</tw-passagedata><tw-passagedata pid="17" name="첫 번째 시련 성공1" tags="" position="650,1250" size="100,100">(set: $successTrial1 to true)
+[[다음-&gt;큰씨앗다이스]]</tw-passagedata><tw-passagedata pid="16" name="첫 번째 시련 성공1" tags="" position="650,1125" size="100,100">(set: $successTrial1 to true)
 (if: $nextButterfly is &quot;황금 나비&quot;)[
     (set: $moveMessage to &quot;그러나 나비에서 뿜어져 나온 빛이 당신을 지킵니다.&quot;)
 ](else-if: $nextButterfly is &quot;붉은 나비&quot;)[
@@ -292,7 +270,7 @@ p {
 
     
 [[다음-&gt;두 번째 시련]]
-</tw-passagedata><tw-passagedata pid="18" name="바람다이스" tags="" position="200,1125" size="100,100">(set: $successProbability to 0)
+</tw-passagedata><tw-passagedata pid="17" name="바람다이스" tags="" position="200,1000" size="100,100">(set: $successProbability to 0)
 (set: $failureProbability to 0)
 (if: $selectedButterfly is &quot;황금 나비&quot;)[
     (set: $successProbability to 0.8)
@@ -318,7 +296,7 @@ p {
     나비는 바람에 휩쓸려 넘어졌습니다.
     (set: $trial1Result to &quot;실패&quot;)
     (goto: &quot;첫 번째 시련 실패&quot;)
-]</tw-passagedata><tw-passagedata pid="19" name="바람다이스2" tags="" position="650,1125" size="100,100">(set: $successProbability to 0)
+]</tw-passagedata><tw-passagedata pid="18" name="바람다이스2" tags="" position="650,1000" size="100,100">(set: $successProbability to 0)
 (set: $failureProbability to 0)
 (if: $selectedButterfly is &quot;황금 나비&quot;)[
     (set: $successProbability to 0.8)
@@ -344,7 +322,7 @@ p {
     나비는 바람에 휘말려 일시적으로 길을 잃고, 몇 분간 헤매다가 길을 찾습니다.
     (set: $trial1Result to &quot;실패&quot;)
     (goto: &quot;첫 번째 시련 실패&quot;)
-]</tw-passagedata><tw-passagedata pid="20" name="작은씨앗다이스" tags="" position="225,1600" size="100,100">(set: $successProbability to 0)
+]</tw-passagedata><tw-passagedata pid="19" name="작은씨앗다이스" tags="" position="200,1375" size="100,100">(set: $successProbability to 0)
 (set: $failureProbability to 0)
 (if: $selectedButterfly is &quot;황금 나비&quot;)[
     (set: $successProbability to 0.8)
@@ -370,7 +348,7 @@ p {
     씨앗을 모으다 실패했습니다.
     (set: $trial2Result to &quot;실패&quot;)
     (goto: &quot;두 번째 시련 실패&quot;)
-]</tw-passagedata><tw-passagedata pid="21" name="큰씨앗다이스" tags="" position="675,1600" size="100,100">(set: $successProbability to 0)
+]</tw-passagedata><tw-passagedata pid="20" name="큰씨앗다이스" tags="" position="650,1375" size="100,100">(set: $successProbability to 0)
 (set: $failureProbability to 0)
 (if: $selectedButterfly is &quot;황금 나비&quot;)[
     (set: $successProbability to 0.8)
@@ -396,7 +374,7 @@ p {
     씨앗을 모으다 실패했습니다.
     (set: $trial2Result to &quot;실패&quot;)
     (goto: &quot;두 번째 시련 실패1&quot;)
-]</tw-passagedata><tw-passagedata pid="22" name="두 번째 시련 실패1" tags="" position="675,1725" size="100,100">
+]</tw-passagedata><tw-passagedata pid="21" name="두 번째 시련 실패1" tags="" position="650,1500" size="100,100">
 (set: $successTrial2 to false)
 
 그러나 아무리 찾아봐도 큰 씨앗은 보이지 않았습니다.
@@ -405,7 +383,7 @@ p {
 
 (set: $seed1 to false)
 (set: $seed2 to false)
-[[다음-&gt;세 번째 시련]]</tw-passagedata><tw-passagedata pid="23" name="두 번째 시련 성공1" tags="" position="550,1725" size="100,100">
+[[다음-&gt;세 번째 시련]]</tw-passagedata><tw-passagedata pid="22" name="두 번째 시련 성공1" tags="" position="525,1500" size="100,100">
 (set: $successTrial2 to true)
 
 이내 구석진 곳에서 주먹만한 씨앗을 발견합니다.
@@ -417,7 +395,7 @@ p {
 
 (set: $seed2 to true)
 (set: $seed1 to false)
-[[다음-&gt;세 번째 시련]]</tw-passagedata><tw-passagedata pid="24" name="네 번째 시련2" tags="" position="450,2025" size="100,100">
+[[다음-&gt;세 번째 시련]]</tw-passagedata><tw-passagedata pid="23" name="네 번째 시련2" tags="" position="625,2125" size="100,100">
 
 
 어째서 강이 바싹 말랐는지 알 수는 없지만, 형용할 수 없는 슬픔이 몰려옵니다.
@@ -435,7 +413,7 @@ p {
 [[슬픔을 받아들이고 운다]]
 
 
-[[눈물을 참으며 강해지려 한다]]</tw-passagedata><tw-passagedata pid="25" name="엔딩다이스" tags="" position="75,2000" size="100,100">
+[[눈물을 참으며 강해지려 한다]]</tw-passagedata><tw-passagedata pid="24" name="엔딩다이스" tags="" position="150,2000" size="100,100">
 
 
 이제 여정의 마지막에 다다릅니다.
@@ -468,23 +446,27 @@ p {
     [[엔딩-&gt;새드 엔딩 3]]
 ](else-if: $failTrial4 is true)[
     [[엔딩-&gt;새드 엔딩 0]]
-]</tw-passagedata><tw-passagedata pid="26" name="새드 엔딩 1" tags="" position="0,2350" size="100,100">새드엔딩1: 꽃이 없음
+]</tw-passagedata><tw-passagedata pid="25" name="새드 엔딩 1" tags="" position="75,2250" size="100,100">새드엔딩1: &lt;!--꽃이 없음--&gt;
 (set: $summary to &quot;&quot;)(set: $summary to $summary)(if: $successTrial1)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 감정의 바람에서 당신의 트라우마와 마주하고 동료와 떨어질 위기에 처했습니다. 그러나 동료의 도움으로 위기를 헤쳐나갑니다.&quot;)](else:)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 감정의 바람에서 트라우마와 마주하였습니다. 그리고 당신의 동료와 헤어지고 고난을 겪었습니다. 꽤 힘든 일이었습니다.&quot;)](set: $summary to $summary + &quot;\n&quot;)(set: $summary to $summary)(if: $successTrial2)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 희망의 씨앗을 성공적으로 모았습니다. 덕분에 밝은 희망의 빛과 함께 길을 헤쳐나갈 수 있었습니다. 씨앗은 당신에게 성취를 가져다 주었습니다.&quot;)](else:)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 희망의 씨앗을 모으는 데 실패했습니다. 어렵고 오랜 여정이 뒤따랐습니다.&quot;)](set: $summary to $summary + &quot;\n&quot;)(set: $summary to $summary)(if: $successTrial3)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 당신의 불안과 두려움을 마주하였지만, 무사히 지나갈 수 있었습니다. 당신의 친구가 함께합니다.&quot;)](else:)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 당신의 불안과 두려움을 마주하였고, 당신의 친구를 잃었습니다.&quot;)](set: $summary to $summary + &quot;\n&quot;)(set: $summary to $summary)(if: $successTrial4)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 자신의 감정을 온전히 받아들이고 눈물로 승화시키는 것을 선택하였습니다. 이 선택은 당신의 머리를 맑게 하였고, 문제를 해결할 중요한 열쇠가 되어 주었습니다. 당신은 무사히 섬에 도달할 수 있었습니다.&quot;)](else:)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 감정이 휘몰아침을 느꼈지만 참기로 결정했습니다. 이 결정은 한 순간 당신을 강하게 보이도록 할 수는 있지만, 결국에는 당신을 옥죄어 올 것입니다.&quot;)]
 (set: $summary to $summary + &quot;\n&quot;)
 
 당신의 여정을 되돌아봅니다...
 (print: $summary)
-당신은 꽃을 가져오지 못했습니다. 마을을 구하지 못했습니다.
+당신은 꽃을 가져오지 못했기에 마을을 구하지 못했습니다..
 
-end</tw-passagedata><tw-passagedata pid="27" name="새드 엔딩 2" tags="" position="100,2350" size="100,100">새드엔딩2: 나비가 없음
+
+&#39;&#39;The end&#39;&#39;
+(다시 플레이 하고 싶으면 링크를 재접속 해주세요.)</tw-passagedata><tw-passagedata pid="26" name="새드 엔딩 2" tags="" position="175,2250" size="100,100">새드엔딩2: 나비가 없음
 (set: $summary to &quot;&quot;)(set: $summary to $summary)(if: $successTrial1)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 감정의 바람에서 당신의 트라우마와 마주하고 동료와 떨어질 위기에 처했습니다. 그러나 동료의 도움으로 위기를 헤쳐나갑니다.&quot;)](else:)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 감정의 바람에서 트라우마와 마주하였습니다. 그리고 당신의 동료와 헤어지고 고난을 겪었습니다. 꽤 힘든 일이었습니다.&quot;)](set: $summary to $summary + &quot;\n&quot;)(set: $summary to $summary)(if: $successTrial2)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 희망의 씨앗을 성공적으로 모았습니다. 덕분에 밝은 희망의 빛과 함께 길을 헤쳐나갈 수 있었습니다. 씨앗은 당신에게 성취를 가져다 주었습니다.&quot;)](else:)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 희망의 씨앗을 모으는 데 실패했습니다. 어렵고 오랜 여정이 뒤따랐습니다.&quot;)](set: $summary to $summary + &quot;\n&quot;)(set: $summary to $summary)(if: $successTrial3)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 당신의 불안과 두려움을 마주하였지만, 무사히 지나갈 수 있었습니다. 당신의 친구가 함께합니다.&quot;)](else:)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 당신의 불안과 두려움을 마주하였고, 당신의 친구를 잃었습니다.&quot;)](set: $summary to $summary + &quot;\n&quot;)(set: $summary to $summary)(if: $successTrial4)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 자신의 감정을 온전히 받아들이고 눈물로 승화시키는 것을 선택하였습니다. 이 선택은 당신의 머리를 맑게 하였고, 문제를 해결할 중요한 열쇠가 되어 주었습니다. 당신은 무사히 섬에 도달할 수 있었습니다.&quot;)](else:)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 감정이 휘몰아침을 느꼈지만 참기로 결정했습니다. 이 결정은 한 순간 당신을 강하게 보이도록 할 수는 있지만, 결국에는 당신을 옥죄어 올 것입니다.&quot;)]
 (set: $summary to $summary + &quot;\n&quot;)
 
 당신의 여정을 되돌아봅니다...
 (print: $summary)
 당신은 꽃을 마을에 가져왔지만 축하해줄 나비는 곁에 없었습니다.
+어딘가 쓸쓸함이 느껴집니다.
 
-[[다음-&gt;꽃]]</tw-passagedata><tw-passagedata pid="28" name="슬픔을 받아들이고 운다" tags="" position="450,2150" size="100,100">
+
+[[다음-&gt;꽃]]</tw-passagedata><tw-passagedata pid="27" name="슬픔을 받아들이고 운다" tags="" position="625,2250" size="100,100">
 (set: $successTrial4 to true)
 
 당신은 이 슬픔을 받아들이고 울기로 결정했습니다.
@@ -495,11 +477,12 @@ end</tw-passagedata><tw-passagedata pid="27" name="새드 엔딩 2" tags="" posi
 
 어찌할 수 없는 설움이 복받쳐 올라 한동안 소리내어 웁니다.
 
-(if:$successTrial3 is true)
-[당신과 여정을 함께한 나비도 눈물을 흘립니다.]
+(if:$successTrial3 is true)[당신과 여정을 함께한 나비도 눈물을 흘립니다.]
+
+한참을 울고 나니 후련한 기분이 듭니다.
 
 
-[[다음-&gt;슬픔을 받아들이고 운다2]] </tw-passagedata><tw-passagedata pid="29" name="눈물을 참으며 강해지려 한다" tags="" position="575,2150" size="100,100">
+[[다음-&gt;슬픔을 받아들이고 운다3]] </tw-passagedata><tw-passagedata pid="28" name="눈물을 참으며 강해지려 한다" tags="" position="750,2250" size="100,100">
 (set: $failTrial4 to true)
 
 당신은 눈물을 참으며 버텨냅니다.
@@ -510,7 +493,7 @@ end</tw-passagedata><tw-passagedata pid="27" name="새드 엔딩 2" tags="" posi
 이제 어떻게 해야 할 지 감도 잡히지 않습니다.
 
 
-[[다음-&gt;눈물을 참으며 강해지려 한다2]]</tw-passagedata><tw-passagedata pid="30" name="눈물을 참으며 강해지려 한다2" tags="" position="575,2275" size="100,100">
+[[다음-&gt;눈물을 참으며 강해지려 한다2]]</tw-passagedata><tw-passagedata pid="29" name="눈물을 참으며 강해지려 한다2" tags="" position="750,2375" size="100,100">
 
 
 당신은 감정을 이겨내려고 해봤지만,
@@ -520,56 +503,49 @@ end</tw-passagedata><tw-passagedata pid="27" name="새드 엔딩 2" tags="" posi
 그럴 수록 강은 점점 메말라갑니다...
 
 
-[[다음-&gt;엔딩다이스]] </tw-passagedata><tw-passagedata pid="31" name="슬픔을 받아들이고 운다2" tags="" position="450,2275" size="100,100">
-
-
-한참을 울고 나니 후련한 기분이 듭니다.
-
-
-[[다음-&gt;슬픔을 받아들이고 운다3]] </tw-passagedata><tw-passagedata pid="32" name="슬픔을 받아들이고 운다3" tags="" position="450,2400" size="100,100">
+[[다음-&gt;엔딩다이스]] </tw-passagedata><tw-passagedata pid="30" name="슬픔을 받아들이고 운다3" tags="" position="625,2375" size="100,100">
 
 
 그때 갑자기 출렁거리는 소리가 들립니다.
+강바닥에서부터 강물이 차오르고 있었고, 차오른 물은 순식간에 강을 채웠습니다.
 
-강바닥에서부터 강물이 차오르고 있습니다.
-
-차오른 물은 순식간에 강을 채웠습니다.
-
-강물이 출렁거리고 강바닥에 있던 나비들도 기운을 차립니다.
-
+강바닥에 있던 나비들도 기운을 차립니다.
 죽은 게 아니라 힘이 빠졌던 거였군요!
 
-
-[[다음-&gt;슬픔을 받아들이고 운다4]] </tw-passagedata><tw-passagedata pid="33" name="슬픔을 받아들이고 운다4" tags="" position="450,2525" size="100,100">
-
-
 당신은 헤엄을 쳐서 섬으로 들어갑니다.
-
 기운을 차린 모든 나비가 당신의 뒤를 따라갑니다.
 
 이 섬은 소원의 토양으로 이루어져 있어, 이곳에 희망의 씨앗을 심는다면 꽃을 피울 수 있을 것입니다!
-
 당신은 주머니를 뒤적거리며 씨앗을 찾습니다.
 
 
-[[다음-&gt;슬픔을 받아들이고 운다5]] </tw-passagedata><tw-passagedata pid="34" name="해피 엔딩 2" tags="" position="100,2150" size="100,100">:: 엔딩 : 1,2,3중 실패가 하나라도 있으며,아이템이 있고, 4가 성공
+[[다음-&gt;슬픔을 받아들이고 운다5]] </tw-passagedata><tw-passagedata pid="31" name="해피 엔딩 2" tags="" position="175,2150" size="100,100">:: 엔딩 &lt;!-- 1,2,3중 실패가 하나 있으며,아이템이 있고,4가 성공--&gt;
 (set: $summary to &quot;&quot;)(set: $summary to $summary)(if: $successTrial1)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 감정의 바람에서 당신의 트라우마와 마주하고 동료와 떨어질 위기에 처했습니다. 그러나 동료의 도움으로 위기를 헤쳐나갑니다.&quot;)](else:)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 감정의 바람에서 트라우마와 마주하였습니다. 그리고 당신의 동료와 헤어지고 고난을 겪었습니다. 꽤 힘든 일이었습니다.&quot;)](set: $summary to $summary + &quot;\n&quot;)(set: $summary to $summary)(if: $successTrial2)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 희망의 씨앗을 성공적으로 모았습니다. 덕분에 밝은 희망의 빛과 함께 길을 헤쳐나갈 수 있었습니다. 씨앗은 당신에게 성취를 가져다 주었습니다.&quot;)](else:)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 희망의 씨앗을 모으는 데 실패했습니다. 어렵고 오랜 여정이 뒤따랐습니다.&quot;)](set: $summary to $summary + &quot;\n&quot;)(set: $summary to $summary)(if: $successTrial3)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 당신의 불안과 두려움을 마주하였지만, 무사히 지나갈 수 있었습니다. 당신의 친구가 함께합니다.&quot;)](else:)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 당신의 불안과 두려움을 마주하였고, 당신의 친구를 잃었습니다.&quot;)](set: $summary to $summary + &quot;\n&quot;)(set: $summary to $summary)(if: $successTrial4)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 자신의 감정을 온전히 받아들이고 눈물로 승화시키는 것을 선택하였습니다. 이 선택은 당신의 머리를 맑게 하였고, 문제를 해결할 중요한 열쇠가 되어 주었습니다. 당신은 무사히 섬에 도달할 수 있었습니다.&quot;)](else:)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 감정이 휘몰아침을 느꼈지만 참기로 결정했습니다. 이 결정은 한 순간 당신을 강하게 보이도록 할 수는 있지만, 결국에는 당신을 옥죄어 올 것입니다.&quot;)]
 (set: $summary to $summary + &quot;\n&quot;)
 
 당신의 여정을 되돌아봅니다...
 (print: $summary)
-(if:$successTrial1 is false)[ 당신은 꽃이 없었지만 보석의 힘으로 꽃을 피워냈습니다.]
-(else-if:$successTrial2 is false)[당신의 나비가 뒤에서 따라왔습니다. 보석의 힘으로 되살아난 듯 합니다.]
+(if:$successTrial1 is false)[ 당신은 꽃이 없었지만 보석의 힘으로 꽃을 피워냈습니다.](else-if:$successTrial2 is false)[당신의 나비가 뒤에서 따라왔습니다. 보석의 힘으로 되살아난 듯 합니다.]
 
-[[다음-&gt;꽃]]</tw-passagedata><tw-passagedata pid="35" name="해피 엔딩 1" tags="" position="0,2150" size="100,100">:: 엔딩
-(set: $summary to &quot;&quot;)(set: $summary to $summary)(if: $successTrial1)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 감정의 바람에서 당신의 트라우마와 마주하고 동료와 떨어질 위기에 처했습니다. 그러나 동료의 도움으로 위기를 헤쳐나갑니다.&quot;)](else:)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 감정의 바람에서 트라우마와 마주하였습니다. 그리고 당신의 동료와 헤어지고 고난을 겪었습니다. 꽤 힘든 일이었습니다.&quot;)](set: $summary to $summary + &quot;\n&quot;)(set: $summary to $summary)(if: $successTrial2)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 희망의 씨앗을 성공적으로 모았습니다. 덕분에 밝은 희망의 빛과 함께 길을 헤쳐나갈 수 있었습니다. 씨앗은 당신에게 성취를 가져다 주었습니다.&quot;)](else:)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 희망의 씨앗을 모으는 데 실패했습니다. 어렵고 오랜 여정이 뒤따랐습니다.&quot;)](set: $summary to $summary + &quot;\n&quot;)(set: $summary to $summary)(if: $successTrial3)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 당신의 불안과 두려움을 마주하였지만, 무사히 지나갈 수 있었습니다. 당신의 친구가 함께합니다.&quot;)](else:)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 당신의 불안과 두려움을 마주하였고, 당신의 친구를 잃었습니다.&quot;)](set: $summary to $summary + &quot;\n&quot;)(set: $summary to $summary)(if: $successTrial4)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 자신의 감정을 온전히 받아들이고 눈물로 승화시키는 것을 선택하였습니다. 이 선택은 당신의 머리를 맑게 하였고, 문제를 해결할 중요한 열쇠가 되어 주었습니다. 당신은 무사히 섬에 도달할 수 있었습니다.&quot;)](else:)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 감정이 휘몰아침을 느꼈지만 참기로 결정했습니다. 이 결정은 한 순간 당신을 강하게 보이도록 할 수는 있지만, 결국에는 당신을 옥죄어 올 것입니다.&quot;)]
-(set: $summary to $summary + &quot;\n&quot;)
-
-당신의 여정을 되돌아봅니다...
-(print: $summary)
- 당신은 모든 시련을 성공적으로 통과하고 희망을 되찾았습니다. 해피 엔딩!
+ 당신은 마을에 꽃을 가져오고 희망을 되찾았습니다.
+ 나비도 기뻐하는 듯 보이네요.
  
- [[다음-&gt;꽃]]</tw-passagedata><tw-passagedata pid="36" name="세 번째 시련" tags="" position="950,1825" size="100,100">
+ 해피엔딩!
+
+
+[[다음-&gt;꽃]]</tw-passagedata><tw-passagedata pid="32" name="해피 엔딩 1" tags="" position="75,2150" size="100,100">:: 엔딩 &lt;!--해피엔딩--&gt;
+(set: $summary to &quot;&quot;)(set: $summary to $summary)(if: $successTrial1)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 감정의 바람에서 당신의 트라우마와 마주하고 동료와 떨어질 위기에 처했습니다. 그러나 동료의 도움으로 위기를 헤쳐나갑니다.&quot;)](else:)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 감정의 바람에서 트라우마와 마주하였습니다. 그리고 당신의 동료와 헤어지고 고난을 겪었습니다. 꽤 힘든 일이었습니다.&quot;)](set: $summary to $summary + &quot;\n&quot;)(set: $summary to $summary)(if: $successTrial2)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 희망의 씨앗을 성공적으로 모았습니다. 덕분에 밝은 희망의 빛과 함께 길을 헤쳐나갈 수 있었습니다. 씨앗은 당신에게 성취를 가져다 주었습니다.&quot;)](else:)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 희망의 씨앗을 모으는 데 실패했습니다. 어렵고 오랜 여정이 뒤따랐습니다.&quot;)](set: $summary to $summary + &quot;\n&quot;)(set: $summary to $summary)(if: $successTrial3)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 당신의 불안과 두려움을 마주하였지만, 무사히 지나갈 수 있었습니다. 당신의 친구가 함께합니다.&quot;)](else:)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 당신의 불안과 두려움을 마주하였고, 당신의 친구를 잃었습니다.&quot;)](set: $summary to $summary + &quot;\n&quot;)(set: $summary to $summary)(if: $successTrial4)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 자신의 감정을 온전히 받아들이고 눈물로 승화시키는 것을 선택하였습니다. 이 선택은 당신의 머리를 맑게 하였고, 문제를 해결할 중요한 열쇠가 되어 주었습니다. 당신은 무사히 섬에 도달할 수 있었습니다.&quot;)](else:)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 감정이 휘몰아침을 느꼈지만 참기로 결정했습니다. 이 결정은 한 순간 당신을 강하게 보이도록 할 수는 있지만, 결국에는 당신을 옥죄어 올 것입니다.&quot;)]
+(set: $summary to $summary + &quot;\n&quot;)
+
+당신의 여정을 되돌아봅니다...
+(print: $summary)
+ 당신은 모든 시련을 성공적으로 통과하고 마을에 희망을 되찾았습니다.
+ 나비도 기뻐하는 듯 보이네요.
+ 
+ 해피엔딩!
+ 
+ 
+ [[다음-&gt;꽃]]</tw-passagedata><tw-passagedata pid="33" name="세 번째 시련" tags="" position="425,1625" size="100,100">
 
 
 당신과 나비는 갑자기 주변이 어두워졌음을 느낍니다.
@@ -585,7 +561,7 @@ end</tw-passagedata><tw-passagedata pid="27" name="새드 엔딩 2" tags="" posi
 
 [[그림자를 피해 숨어서 이동한다]]
 
-[[그림자를 직면하고 싸운다]]</tw-passagedata><tw-passagedata pid="37" name="그림자를 피해 숨어서 이동한다" tags="" position="900,1950" size="100,100">
+[[그림자를 직면하고 싸운다]]</tw-passagedata><tw-passagedata pid="34" name="그림자를 피해 숨어서 이동한다" tags="" position="375,1750" size="100,100">
 
 
 당신은 그림자를 피해 숨어서 이동하기로 합니다.
@@ -595,7 +571,7 @@ end</tw-passagedata><tw-passagedata pid="27" name="새드 엔딩 2" tags="" posi
 나비가 잘 따라오고 있는 걸까요..?
 
 
-[[다음-&gt;그림자다이스1]]</tw-passagedata><tw-passagedata pid="38" name="그림자를 직면하고 싸운다" tags="" position="1025,1950" size="100,100">
+[[다음-&gt;그림자다이스1]]</tw-passagedata><tw-passagedata pid="35" name="그림자를 직면하고 싸운다" tags="" position="500,1750" size="100,100">
 
 
 당신은 그림자를 직면하여 싸우기로 합니다.
@@ -605,7 +581,7 @@ end</tw-passagedata><tw-passagedata pid="27" name="새드 엔딩 2" tags="" posi
 당신과 나비는 용기 있게 그림자를 바라봅니다.
 
 
-[[다음-&gt;그림자다이스2]]</tw-passagedata><tw-passagedata pid="39" name="슬픔을 받아들이고 운다5" tags="" position="450,2650" size="100,100">
+[[다음-&gt;그림자다이스2]]</tw-passagedata><tw-passagedata pid="36" name="슬픔을 받아들이고 운다5" tags="" position="625,2500" size="100,100">
 
 (if:$seed1 is true)
 [
@@ -618,8 +594,7 @@ end</tw-passagedata><tw-passagedata pid="27" name="새드 엔딩 2" tags="" posi
 이제 마을에 돌아갈 수 있을 겁니다!
 
 
-[[다음-&gt;엔딩다이스]] 
-]
+[[다음-&gt;엔딩다이스]] ]
 (else-if:$seed2 is true)
 [
 당신은 소원의 토양에 당신이 가져온 큰 희망의 씨앗을 심습니다.
@@ -631,8 +606,7 @@ end</tw-passagedata><tw-passagedata pid="27" name="새드 엔딩 2" tags="" posi
 이제 마을에 돌아갈 수 있을 겁니다!
 
 
-[[다음-&gt;엔딩다이스]] 
-]
+[[다음-&gt;엔딩다이스]] ]
 (else:)
 [
 하지만 당신의 손 안에는 싹을 틔울 수 있는 어떠한 씨앗도 없습니다.
@@ -641,12 +615,8 @@ end</tw-passagedata><tw-passagedata pid="27" name="새드 엔딩 2" tags="" posi
 
 큰 절망감에 빠집니다. 이제 마을을 구할 수 없습니다.
 
-
-[[다음-&gt;엔딩다이스]] 
-]
 (if:$seed1 is false and $seed2 is false and $importantItem is true)
 [
-
 그때 주머니 속 보석에서 미세한 움직임이 느껴집니다.
 
 꺼내 보니 보석에서 싹이 트고 있었습니다..!!!
@@ -657,7 +627,8 @@ end</tw-passagedata><tw-passagedata pid="27" name="새드 엔딩 2" tags="" posi
 
 이제 마을에 돌아갈 수 있을 겁니다!
 
-]</tw-passagedata><tw-passagedata pid="40" name="그림자다이스1" tags="" position="775,1950" size="100,100">(set: $successProbability to 0)
+[[다음-&gt;엔딩다이스]] ]
+]</tw-passagedata><tw-passagedata pid="37" name="그림자다이스1" tags="" position="250,1750" size="100,100">(set: $successProbability to 0)
 (set: $failureProbability to 0)
 (if: $selectedButterfly is &quot;황금 나비&quot;)[
     (set: $successProbability to 0.8)
@@ -681,7 +652,7 @@ end</tw-passagedata><tw-passagedata pid="27" name="새드 엔딩 2" tags="" posi
 ](else:)[
     (set: $trial2Result to &quot;실패&quot;)
     (goto: &quot;세 번째 시련 실패&quot;)
-]</tw-passagedata><tw-passagedata pid="41" name="세 번째 시련 성공" tags="" position="775,2075" size="100,100">(set: $successTrial3 to true)
+]</tw-passagedata><tw-passagedata pid="38" name="세 번째 시련 성공" tags="" position="250,1875" size="100,100">(set: $successTrial3 to true)
 
 
 아! 나비는 저기 뒤에서 잘 따라오고 있었습니다.
@@ -693,7 +664,7 @@ end</tw-passagedata><tw-passagedata pid="27" name="새드 엔딩 2" tags="" posi
 다음 여정을 떠납니다.
 
 
-[[다음-&gt;네 번째 시련]]</tw-passagedata><tw-passagedata pid="42" name="세 번째 시련 실패" tags="" position="900,2075" size="100,100">
+[[다음-&gt;네 번째 시련]]</tw-passagedata><tw-passagedata pid="39" name="세 번째 시련 실패" tags="" position="375,1875" size="100,100">
 (set: $successTrial3 to false)
 
 분명 뒤따라 오고 있을 터인 나비가 보이지 않습니다.
@@ -713,7 +684,7 @@ end</tw-passagedata><tw-passagedata pid="27" name="새드 엔딩 2" tags="" posi
 다음 여정을 떠납니다.
 
 
-[[다음-&gt;네 번째 시련]]</tw-passagedata><tw-passagedata pid="43" name="그림자다이스2" tags="" position="1150,1950" size="100,100">(set: $successProbability to 0)
+[[다음-&gt;네 번째 시련]]</tw-passagedata><tw-passagedata pid="40" name="그림자다이스2" tags="" position="625,1750" size="100,100">(set: $successProbability to 0)
 (set: $failureProbability to 0)
 (if: $selectedButterfly is &quot;황금 나비&quot;)[
     (set: $successProbability to 0.8)
@@ -737,7 +708,7 @@ end</tw-passagedata><tw-passagedata pid="27" name="새드 엔딩 2" tags="" posi
 ](else:)[
     (set: $trial2Result to &quot;실패&quot;)
     (goto: &quot;세 번째 시련 실패1&quot;)
-]</tw-passagedata><tw-passagedata pid="44" name="세 번째 시련 성공1" tags="" position="1025,2075" size="100,100">(set: $successTrial3 to true)
+]</tw-passagedata><tw-passagedata pid="41" name="세 번째 시련 성공1" tags="" position="500,1875" size="100,100">(set: $successTrial3 to true)
 
 
 그림자는 더 거세게 몰아칩니다.
@@ -757,7 +728,7 @@ end</tw-passagedata><tw-passagedata pid="27" name="새드 엔딩 2" tags="" posi
 당당하게 다음 여정으로 나아갑니다.
 
 
-[[다음-&gt;네 번째 시련]]</tw-passagedata><tw-passagedata pid="45" name="세 번째 시련 실패1" tags="" position="1150,2075" size="100,100">(set: $successTrial3 to false)
+[[다음-&gt;네 번째 시련]]</tw-passagedata><tw-passagedata pid="42" name="세 번째 시련 실패1" tags="" position="625,1875" size="100,100">(set: $successTrial3 to false)
 
 
 그림자는 거세게 몰아쳐 오고, 당신과 나비는 그림자에 대적합니다.
@@ -776,7 +747,7 @@ end</tw-passagedata><tw-passagedata pid="27" name="새드 엔딩 2" tags="" posi
 다음 여정을 떠납니다.
 
 
-[[다음-&gt;네 번째 시련]]</tw-passagedata><tw-passagedata pid="46" name="새드 엔딩 3" tags="" position="200,2350" size="100,100">새드엔딩3: 꽃도나비도 없음
+[[다음-&gt;네 번째 시련]]</tw-passagedata><tw-passagedata pid="43" name="새드 엔딩 3" tags="" position="275,2250" size="100,100">새드엔딩3: 꽃도나비도 없음
 (set: $summary to &quot;&quot;)(set: $summary to $summary)(if: $successTrial1)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 감정의 바람에서 당신의 트라우마와 마주하고 동료와 떨어질 위기에 처했습니다. 그러나 동료의 도움으로 위기를 헤쳐나갑니다.&quot;)](else:)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 감정의 바람에서 트라우마와 마주하였습니다. 그리고 당신의 동료와 헤어지고 고난을 겪었습니다. 꽤 힘든 일이었습니다.&quot;)](set: $summary to $summary + &quot;\n&quot;)(set: $summary to $summary)(if: $successTrial2)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 희망의 씨앗을 성공적으로 모았습니다. 덕분에 밝은 희망의 빛과 함께 길을 헤쳐나갈 수 있었습니다. 씨앗은 당신에게 성취를 가져다 주었습니다.&quot;)](else:)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 희망의 씨앗을 모으는 데 실패했습니다. 어렵고 오랜 여정이 뒤따랐습니다.&quot;)](set: $summary to $summary + &quot;\n&quot;)(set: $summary to $summary)(if: $successTrial3)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 당신의 불안과 두려움을 마주하였지만, 무사히 지나갈 수 있었습니다. 당신의 친구가 함께합니다.&quot;)](else:)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 당신의 불안과 두려움을 마주하였고, 당신의 친구를 잃었습니다.&quot;)](set: $summary to $summary + &quot;\n&quot;)(set: $summary to $summary)(if: $successTrial4)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 자신의 감정을 온전히 받아들이고 눈물로 승화시키는 것을 선택하였습니다. 이 선택은 당신의 머리를 맑게 하였고, 문제를 해결할 중요한 열쇠가 되어 주었습니다. 당신은 무사히 섬에 도달할 수 있었습니다.&quot;)](else:)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 감정이 휘몰아침을 느꼈지만 참기로 결정했습니다. 이 결정은 한 순간 당신을 강하게 보이도록 할 수는 있지만, 결국에는 당신을 옥죄어 올 것입니다.&quot;)]
 (set: $summary to $summary + &quot;\n&quot;)
 
@@ -785,19 +756,25 @@ end</tw-passagedata><tw-passagedata pid="27" name="새드 엔딩 2" tags="" posi
 당신의 손에는 꽃도, 당신의 곁에는 나비도 없습니다.
 마을을 구하지 못했습니다.
 
-end</tw-passagedata><tw-passagedata pid="47" name="새드 엔딩 0" tags="" position="0,2450" size="100,100">4 실패시
+
+&#39;&#39;The end&#39;&#39;
+(다시 플레이 하고 싶으면 링크를 재접속 해주세요.)</tw-passagedata><tw-passagedata pid="44" name="새드 엔딩 0" tags="" position="75,2350" size="100,100">4 실패시
 (set: $summary to &quot;&quot;)(set: $summary to $summary)(if: $successTrial1)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 감정의 바람에서 당신의 트라우마와 마주하고 동료와 떨어질 위기에 처했습니다. 그러나 동료의 도움으로 위기를 헤쳐나갑니다.&quot;)](else:)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 감정의 바람에서 트라우마와 마주하였습니다. 그리고 당신의 동료와 헤어지고 고난을 겪었습니다. 꽤 힘든 일이었습니다.&quot;)](set: $summary to $summary + &quot;\n&quot;)(set: $summary to $summary)(if: $successTrial2)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 희망의 씨앗을 성공적으로 모았습니다. 덕분에 밝은 희망의 빛과 함께 길을 헤쳐나갈 수 있었습니다. 씨앗은 당신에게 성취를 가져다 주었습니다.&quot;)](else:)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 희망의 씨앗을 모으는 데 실패했습니다. 어렵고 오랜 여정이 뒤따랐습니다.&quot;)](set: $summary to $summary + &quot;\n&quot;)(set: $summary to $summary)(if: $successTrial3)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 당신의 불안과 두려움을 마주하였지만, 무사히 지나갈 수 있었습니다. 당신의 친구가 함께합니다.&quot;)](else:)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 당신의 불안과 두려움을 마주하였고, 당신의 친구를 잃었습니다.&quot;)](set: $summary to $summary + &quot;\n&quot;)(set: $summary to $summary)(if: $successTrial4)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 자신의 감정을 온전히 받아들이고 눈물로 승화시키는 것을 선택하였습니다. 이 선택은 당신의 머리를 맑게 하였고, 문제를 해결할 중요한 열쇠가 되어 주었습니다. 당신은 무사히 섬에 도달할 수 있었습니다.&quot;)](else:)[(set: $summary to $summary + &quot;&lt;br&gt;당신은 감정이 휘몰아침을 느꼈지만 참기로 결정했습니다. 이 결정은 한 순간 당신을 강하게 보이도록 할 수는 있지만, 결국에는 당신을 옥죄어 올 것입니다.&quot;)]
 (set: $summary to $summary + &quot;\n&quot;)
 
 당신의 여정을 되돌아봅니다...
 (print: $summary)
-당신은 빈손으로 마을로 돌아왔습니다.
+당신은 빈손으로 마을로 돌아왔습니다..
+마을을 구하지 못했습니다.
+당신은 당신의 감정에 솔직해질 필요가 있다는 생각이 들었습니다.
 
-end</tw-passagedata><tw-passagedata pid="48" name="꽃" tags="" position="0,2600" size="100,100">
+
+&#39;&#39;The end&#39;&#39;
+(다시 플레이 하고 싶으면 링크를 재접속 해주세요.)</tw-passagedata><tw-passagedata pid="45" name="꽃" tags="" position="100,2500" size="100,100">
 여정을 마친 당신의 손에는 이 꽃이 들려 있었습니다.
 (잠시 기다리면 꽃이 보입니다)
 
-&lt;iframe src=&quot;https://editor.p5js.org/223jiwon/full/14TZds7yL&quot; width=&quot;500&quot; height=&quot;800&quot; style=&quot;border:none;&quot;&gt;&lt;/iframe&gt;</tw-passagedata><tw-passagedata pid="49" name="제목 없는 구절" tags="" position="100,2600" size="100,100"></tw-passagedata></tw-storydata>
+&lt;iframe src=&quot;https://editor.p5js.org/223jiwon/full/14TZds7yL&quot; width=&quot;500&quot; height=&quot;800&quot; style=&quot;border:none;&quot;&gt;&lt;/iframe&gt;</tw-passagedata><tw-passagedata pid="46" name="제목 없는 구절" tags="" position="200,2500" size="100,100"></tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
