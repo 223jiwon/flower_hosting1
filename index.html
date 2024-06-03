@@ -170,8 +170,8 @@ p {
     (set: $moveMessage to &quot;그때 나비의 용맹함이 당신에게 전해집니다. 곧이어 나비는 날개짓을 힘차게 하더니 바람을 피하며 자신있게 날아갔습니다. 당신도 그 뒤를 따라갑니다.&quot;)
 ](else-if: $nextButterfly is &quot;녹색 나비&quot;)[
     (set: $moveMessage to &quot;그때 나비의 녹색 날개가 아름답게 펄럭거렸습니다. 곧이어 바람이 잠잠해졌습니다. 나비는 당신과 속도를 맞추며 날아갑니다.&quot;)
-](else-if: $nextButterfly is &quot;자색 나비&quot;)[
-    (set: $moveMessage to &quot;그러나 자색 나비는 바람이 잘 닿지 않는 길을 알고 있었습니다. 나비의 안내를 따라 당신도 함께 나아갑니다.&quot;)
+](else-if: $nextButterfly is &quot;파랑 나비&quot;)[
+    (set: $moveMessage to &quot;그러나 파랑 나비는 바람이 잘 닿지 않는 길을 알고 있었습니다. 나비의 안내를 따라 당신도 함께 나아갑니다.&quot;)
 ]
 
 (print: $moveMessage)
@@ -278,7 +278,7 @@ p {
     (set: $moveMessage to &quot;그러나 나비의 용맹함이 당신을 지킵니다.&quot;)
 ](else-if: $nextButterfly is &quot;녹색 나비&quot;)[
     (set: $moveMessage to &quot;그러나 나비의 자연을 다스리는 힘이 당신이 가는 길의 바람을 약하게 만듭니다.&quot;)
-](else-if: $nextButterfly is &quot;자색 나비&quot;)[
+](else-if: $nextButterfly is &quot;파랑 나비&quot;)[
     (set: $moveMessage to &quot;그러나 나비의 지혜가 바람을 뚫고 지나가는 길을 알려줍니다.&quot;)
 ]
 (print: $moveMessage)
@@ -800,10 +800,11 @@ end</tw-passagedata><tw-passagedata pid="47" name="새드 엔딩 0" tags="" posi
 (print: $summary)
 당신은 빈손으로 마을로 돌아왔습니다.
 
-end</tw-passagedata><tw-passagedata pid="48" name="꽃" tags="" position="0,2600" size="100,100">잠시 기다리면 당신의 꽃이 보일 겁니다.
-당신의 손에는 이 꽃이 들려 있었습니다.
+end</tw-passagedata><tw-passagedata pid="48" name="꽃" tags="" position="0,2600" size="100,100">
+여정을 마친 당신의 손에는 이 꽃이 들려 있었습니다.
+(잠시 기다리면 꽃이 보입니다)
 
-&lt;iframe src=&quot;https://editor.p5js.org/223jiwon/full/14TZds7yL&quot; width=&quot;800&quot; height=&quot;800&quot; style=&quot;border:none;&quot;&gt;&lt;/iframe&gt;</tw-passagedata></tw-storydata>
+&lt;iframe src=&quot;https://editor.p5js.org/223jiwon/full/14TZds7yL&quot; width=&quot;800&quot; height=&quot;800&quot; style=&quot;border:none;&quot;&gt;&lt;/iframe&gt;</tw-passagedata><tw-passagedata pid="49" name="제목 없는 구절" tags="" position="100,2600" size="100,100"></tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
